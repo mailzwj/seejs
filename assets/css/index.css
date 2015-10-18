@@ -1,0 +1,177 @@
+.wrap .vertical-line {
+    position: absolute;
+    left: 59px;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 2px;
+    background-color: #b1b1b1;
+}
+
+.wrap .article-wrap {
+    padding: 35px 0 0;
+}
+
+.article {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.article .art-type {
+    float: left;
+    margin-top: 10px;
+    /*padding-top: 15px;*/
+    width: 60px;
+    height: 67px;
+    line-height: 68px;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.article .art-text {
+    background-position: -160px 0;
+}
+
+.article .art-pict {
+    background-position: -230px 0;
+}
+
+.article .art-video {
+    background-position: -300px 0;
+}
+
+.article .art-preview {
+    position: relative;
+    margin-left: 80px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.article .art-preview:after {
+    position: absolute;
+    left: -7px;
+    top: 35px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 0;
+    border-top: 5px dotted transparent;
+    border-bottom: 5px dotted transparent;
+    border-right: 8px solid #fff;
+}
+
+.article .art-title {
+    height: 40px;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.article .art-link {
+    color: #333;
+    font-weight: 600;
+}
+
+.article .art-theme {
+    margin-bottom: 10px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.article .art-body {
+    line-height: 1.432;
+    color: #666;
+}
+
+.article .art-data {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 12px;
+}
+
+/* 分页样式 Start */
+.wrap .pagination {
+    margin: 40px 22px 0 80px;
+    font-size: 0;
+    text-align: center;
+}
+
+.pagination .page {
+    display: inline-block;
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #d17780;
+}
+
+.pagination a.page:hover {
+    background-color: #d17780;
+    color: #fff;
+}
+
+.pagination a.page.active:hover {
+    background-color: #261c1a;
+    color: #fff;
+}
+
+.pagination .page.prev,
+.pagination .page.next {
+    padding: 0 15px;
+    width: auto;
+    border-radius: 16px;
+}
+
+.pagination .disabled {
+    background-color: #534e4c;
+    color: #fff;
+}
+
+.pagination .active {
+    position: relative;
+    background-color: #261c1a;
+    color: #fff;
+}
+
+.pagination .active:after {
+    position: absolute;
+    bottom: -5px;
+    left: -4px;
+    width: 40px;
+    height: 9px;
+    content: '';
+    background-position: -160px -156px;
+}
+
+.pagination .page-percent {
+    margin-top: 5px;
+    padding: 7px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: #261c1a;
+}
+
+.pagination .percent-bar {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #d17780;
+}
+/* 分页样式 End */
