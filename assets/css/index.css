@@ -69,11 +69,19 @@
     height: 40px;
     font-size: 18px;
     line-height: 36px;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .article .art-link {
     color: #333;
     font-weight: 600;
+}
+
+.article .art-link:hover {
+    color: #de0b1b;
 }
 
 .article .art-theme {
@@ -175,3 +183,64 @@
     background-color: #d17780;
 }
 /* 分页样式 End */
+
+@media all and (max-width: 480px) {
+    .wrap .vertical-line {
+        left: 39px;
+    }
+
+    .article .art-title {
+        height: 20px;
+        line-height: 18px;
+        font-size: 10px;
+    }
+
+    .article .art-theme {
+        height: 100px;
+    }
+
+    .article .art-body {
+        font-size: 8px;
+    }
+
+    .article .art-data {
+        padding: 0 10px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 8px;
+    }
+
+    .pagination .page {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 8px;
+    }
+
+    .pagination .page.prev,
+    .pagination .page.next {
+        padding: 0 10px;
+    }
+
+    .pagination .active:after {
+        left: -2px;
+        bottom: -3px;
+        width: 20px;
+        height: 5px;
+        -webkit-background-size: 180px 82.5px;
+        background-size: 180px 82.5px;
+        background-position: -80px -78px;
+    }
+
+    .pagination .page-percent {
+        margin-top: 2px;
+        padding: 3px;
+        height: 5px;
+    }
+
+    .pagination .percent-bar {
+        width: 0;
+        height: 5px;
+        border-radius: 5px;
+    }
+}
