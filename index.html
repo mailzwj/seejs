@@ -82,7 +82,6 @@
             </div>
             <div class="art-data">
                 <span class="icon-thumbs28"></span>&nbsp;<span class="like-num">(20)</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="icon-comment32"></span>&nbsp;<span class="reply-num">(9)</span>
             </div>
         </div>
@@ -103,7 +102,6 @@
             </div>
             <div class="art-data">
                 <span class="icon-thumbs28"></span>&nbsp;<span class="like-num">(20)</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="icon-comment32"></span>&nbsp;<span class="reply-num">(9)</span>
             </div>
         </div>
@@ -124,7 +122,6 @@
             </div>
             <div class="art-data">
                 <span class="icon-thumbs28"></span>&nbsp;<span class="like-num">(20)</span>
-                &nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="icon-comment32"></span>&nbsp;<span class="reply-num">(9)</span>
             </div>
         </div>
