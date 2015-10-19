@@ -73,9 +73,11 @@
             <p>Single-page apps pose a significant accessibility challenge when it comes to communicating view changes. Without a page refresh, screen readers do not pick up these important UI changes, leaving vision-impaired users confused and unaware.</p>
             <p>One solution is to create a message based on the page title, and leverage an <a href="#" target="_blank">ARIA</a> live region to explicitly announce, via a helpful message, that a new view has loaded. First create a function that is called when viewContent is updated. AngularJS provides a $viewContentLoaded event for this purpose. In the controller code, listen for the event and call a function (in CoffeeScript):</p>
             <p>app.controller 'PageController', ($scope, $location, $http) -><br>$scope.$on '$viewContentLoaded', announce_view_loaded<br>In the announce_view_loaded function, update the page title and announce the message. While single-page frameworks do not automatically update page titles, keeping the page title synced with the current view improves users’ understanding of the view.</p>
-            <p>
-                <img src="assets/image/pict.png">
-            </p>
+            <div>
+                <p>
+                    <img src="assets/image/pict.png">
+                </p>
+            </div>
             <h2>Patrick Fox considers ways you can indicate view changes on your single-page app to screen readers.</h2>
             <p>Single-page apps pose a significant accessibility challenge when it comes to communicating view changes. Without a page refresh, screen readers do not pick up these important UI changes, leaving vision-impaired users confused and unaware.</p>
             <p>One solution is to create a message based on the page title, and leverage an <a href="#" target="_blank">ARIA</a> live region to explicitly announce, via a helpful message, that a new view has loaded. First create a function that is called when viewContent is updated. AngularJS provides a $viewContentLoaded event for this purpose. In the controller code, listen for the event and call a function (in CoffeeScript):</p>
