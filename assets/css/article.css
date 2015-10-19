@@ -1,0 +1,103 @@
+.wrap {
+    padding-top: 35px;
+}
+
+.wrap .article-wrap {
+    background-color: #fff;
+}
+
+.wrap .art-title,
+.wrap .content {
+    padding: 0 20px;
+}
+
+.wrap .content {
+    padding: 10px 20px 20px;
+}
+
+.wrap .art-title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.wrap .content h1,
+.wrap .content h2,
+.wrap .content h3,
+.wrap .content h4,
+.wrap .content h5,
+.wrap .content h6 {
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.wrap .content p {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.wrap .content h1 {
+    font-size: 24px;
+}
+
+.wrap .content h2 {
+    font-size: 20px;
+}
+
+.wrap .content h3 {
+    font-size: 18px;
+}
+
+.wrap .content h4 {
+    font-size: 16px;
+}
+
+.wrap .content h5,
+.wrap .content h6 {
+    font-size: 12px;
+}
+
+.wrap .content a:hover,
+.wrap .art-foot a:hover {
+    text-decoration: underline;
+}
+
+.wrap .art-foot .reprint {
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.wrap .art-info {
+    position: relative;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 12px;
+    border: 1px dashed #ccc;
+    border-left: 0;
+    border-right: 0;
+}
+
+.wrap .art-info .art-cate {
+    margin-left: 10px;
+}
+
+.wrap .art-info .icons {
+    color: #de0b1b;
+}
+
+.wrap .art-info .art-praise {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -9px;
+    height: 18px;
+    line-height: 18px;
+    color: #333;
+}
+
+.wrap .art-info .art-praise:hover {
+    text-decoration: none;
+}
