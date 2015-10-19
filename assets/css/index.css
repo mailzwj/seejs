@@ -111,6 +111,10 @@
     font-size: 12px;
 }
 
+.article .art-data .icon-comment32 {
+    margin-left: 10px;
+}
+
 /* 分页样式 Start */
 .wrap .pagination {
     margin: 40px 22px 0 80px;
