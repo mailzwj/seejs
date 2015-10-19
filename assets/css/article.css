@@ -71,9 +71,9 @@
 }
 
 .wrap .art-foot .reprint {
-    padding: 0 20px;
-    height: 60px;
-    line-height: 60px;
+    padding: 16px 20px;
+    /*height: 60px;*/
+    line-height: 1.6;
 }
 
 .wrap .art-info {
