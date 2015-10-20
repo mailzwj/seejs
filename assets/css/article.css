@@ -116,3 +116,42 @@
 .wrap .art-info .art-praise:hover {
     text-decoration: none;
 }
+
+@media all and (max-width: 480px) {
+    .wrap .art-title {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    
+    .wrap .content,
+    .wrap .art-foot .reprint {
+        font-size: 8px;
+    }
+    
+    .wrap .content h1 {
+        font-size: 16px;
+    }
+    
+    .wrap .content h2 {
+        font-size: 14px;
+    }
+    
+    .wrap .content h3 {
+        font-size: 12px;
+    }
+    
+    .wrap .content h4 {
+        font-size: 10px;
+    }
+    
+    .wrap .content h5,
+    .wrap .content h6 {
+        font-size: 8px;
+    }
+    
+    .wrap .art-info {
+        line-height: 40px;
+        font-size: 8px;
+    }
+}
