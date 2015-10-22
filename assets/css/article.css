@@ -44,13 +44,8 @@
     line-height: 1.8;
 }
 
-.wrap .content > div > p {
-    display: inline-block;
-    margin: 0;
-}
-
-.wrap .content > div > p img {
-    width: 100%;
+.wrap .content img {
+    max-width: 100%;
 }
 
 .wrap .content h1 {
