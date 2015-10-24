@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if ($_SESSION['adminId']) {
+        header('Location: ./index.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +21,11 @@
             <form action="./checklogin.php" class="login-form" method="post">
                 <div class="form-group">
                     <label for="J_AdminName" class="input-label"><span class="icon-user77"></span></label>
-                    <input type="text" name="adminname" id="J_AdminName" class="login-input">
+                    <input type="text" name="adminname" id="J_AdminName" class="login-input" placeholder="Administrator">
                 </div>
                 <div class="form-group">
                     <label for="J_AdminPass" class="input-label"><span class="icon-vintage27"></span></label>
-                    <input type="password" name="password" id="J_AdminPass" class="login-input">
+                    <input type="password" name="password" id="J_AdminPass" class="login-input" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <input type="submit" value="登 录" class="admin-submit">
