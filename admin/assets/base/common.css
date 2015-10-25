@@ -23,6 +23,7 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    vertical-align: middle;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -64,4 +65,29 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 ul, li {
     list-style: none;
+}
+
+table {
+    border: 1px solid #bbb;
+}
+
+table tr {
+    height: 38px;
+}
+
+table thead {
+    background-color: #cacaca;
+}
+
+table th,
+table td {
+    padding: 0 15px;
+    border: 1px solid #bbb;
+    vertical-align: middle;
+    text-align: left;
+    color: #333;
+}
+
+.set-wrap {
+    padding-top: 50px;
 }

@@ -47,7 +47,7 @@
             您好，<?php echo $_SESSION['administrator']; ?>！<a href="./exit.php" target="_self" class="logout">退出</a>
         </div>
         <div class="right-body">
-            <iframe src="../index.php" frameborder="0" class="settings" id="J_AdminIframe" name="J_AdminIframe"></iframe>
+            <iframe src="./settings/article-list.php" frameborder="0" class="settings" id="J_AdminIframe" name="J_AdminIframe"></iframe>
         </div>
     </div>
 </div>

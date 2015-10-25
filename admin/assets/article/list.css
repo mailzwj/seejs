@@ -1,0 +1,54 @@
+.add-article {
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    background-color: #261c1a;
+}
+
+.add-article:hover {
+    background-color: #2e2220;
+}
+
+.art-table .art-edit,
+.art-table .art-del {
+    font-size: 16px;
+}
+
+.art-table .art-edit {
+    color: #01b1c8;
+}
+
+.art-table .art-del {
+    color: #c50000;
+}
+
+.art-page {
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.art-page .page {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0 8px;
+    vertical-align: middle;
+    font-size: 14px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #333;
+    border-radius: 3px;
+}
+
+.art-page a.page:hover {
+    background-color: #c0c0c0;
+}
+
+.art-page .current,
+.art-page a.current:hover {
+    background-color: #01b1c8;
+    color: #fff;
+}
