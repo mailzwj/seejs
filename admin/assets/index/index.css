@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    height: 100%;
+}
+
+.wrap .left-bar {
+    float: left;
+    width: 280px;
+    height: 100%;
+    background-color: #261c1a;
+}
+
+.wrap .left-bar .logo {
+    padding-left: 24px;
+    height: 78px;
+    line-height: 82px;
+    border-bottom: 2px solid #1f1715;
+    font-family: colonna;
+    font-size: 36px;
+    font-weight: normal;
+    color: #d17780;
+}
+
+.wrap .left-bar .left-menu-wrap {
+    padding: 24px 24px 0;
+}
+
+.wrap .left-bar .left-menu {
+    overflow: hidden;
+    background-color: #372f2d;
+}
+
+.wrap .left-bar .menu {
+    margin-top: -1px;
+    height: 40px;
+    border-top: 1px solid #312927;
+    font-size: 16px;
+    color: #fff;
+}
+
+.wrap .left-bar .menu .menu-link {
+    display: block;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.wrap .left-bar .menu .menu-link:hover,
+.wrap .left-bar .active .menu-link {
+    background-color: #d17780;
+}
+
+.wrap .main-wrap {
+    margin-left: 280px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap .main-wrap .right-title {
+    padding-right: 20px;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    color: #fff;
+    background-color: #261c1a;
+}
+
+.wrap .main-wrap .right-body {
+    margin-left: 60px;
+}
+
+.wrap .main-wrap .settings {
+    width: 100%;
+    height: auto;
+}
