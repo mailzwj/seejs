@@ -32,7 +32,7 @@
     }
 ?>
 <div class="set-wrap">
-    <a href="./article.php" target="_self" class="add-article">
+    <a href="./article-edit.php" target="_self" class="add-article">
         <span class="icon-plus25"></span>Add article
     </a>
     <div class="art-table">
@@ -62,15 +62,15 @@
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td>
-                        <a href="#" target="_blank"><?php echo $row['title']; ?></a>
+                        <a href="../../article.php?id=<?php echo $row['id']; ?>" target="_blank"><?php echo $row['title']; ?></a>
                     </td>
                     <td><?php echo $row['publisher']; ?></td>
                     <td><?php echo $row['category']; ?></td>
                     <td><?php echo $row['praise']; ?></td>
                     <td><?php echo $row['comment']; ?></td>
                     <td>
-                        <a href="#" target="_self" class="art-edit"><span class="icon-edit24"></span></a>
-                        <a href="#" target="_self" class="art-del"><span class="icon-remove11"></span></a>
+                        <a href="./article-edit.php?id=<?php echo $row['id']; ?>" target="_self" class="art-edit"><span class="icon-edit24"></span></a>
+                        <a href="./article-del.php?id=<?php echo $row['id']; ?>" target="_self" class="art-del"><span class="icon-remove11"></span></a>
                     </td>
                 </tr>
                 <?php
