@@ -16,8 +16,10 @@
 </head>
 <body>
 <?php
+    include_once('../../inc/conn.php');
     $id = isset($_GET['id']) ? $_GET['id'] : '';
 ?>
     edit--<?php echo $id; ?>
+<?php mysql_close($conn); ?>
 </body>
 </html>

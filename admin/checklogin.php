@@ -9,6 +9,8 @@
 
     $rsArr = mysql_fetch_array($rs);
 
+    mysql_close($conn);
+
     if (is_array($rsArr)) {
         $_SESSION['adminId'] = $rsArr['id'];
         $_SESSION['administrator'] = $rsArr['adminname'];

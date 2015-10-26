@@ -24,6 +24,7 @@
     $start = ($page - 1) * $pageSize;
     $end = $start + $pageSize;
     $rs = mysql_query('SELECT * FROM article WHERE deleted=0 ORDER BY createTime DESC LIMIT ' . $start . ',' . $end);
+    $rows = mysql_num_rows($rs);
     $rsCount = mysql_query('SELECT count(*) FROM article WHERE deleted=0');
     if ($rsRow = mysql_fetch_array($rsCount)) {
         $count = $rsRow[0];
@@ -50,7 +51,7 @@
             </thead>
             <tbody>
                 <?php
-                    if (!$rs) {
+                    if (!$rows) {
                 ?>
                 <tr>
                     <td colspan="7">暂无文章！</td>
@@ -102,6 +103,7 @@
         <?php } ?>
     </div>
     <?php } ?>
+<?php mysql_close($conn); ?>
 </div>
 </body>
 </html>
