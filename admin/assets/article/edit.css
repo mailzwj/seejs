@@ -1,0 +1,16 @@
+.ed-row {
+    margin-bottom: 20px;
+}
+
+.editor {
+    margin: 0;
+    padding: 5px 10px;
+    width: 880px;
+    height: 490px;
+    resize: none;
+    background-color: #fff;
+}
+
+.ed-row .cancel {
+    margin-left: 20px;
+}

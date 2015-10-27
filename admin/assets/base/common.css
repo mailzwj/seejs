@@ -41,8 +41,11 @@ body {
     height: 100%;
 }
 
-body {
+body, input, textarea {
     font: 14px/1.5 Consolas, Arial, '\5fae\8f6f\96c5\9ed1', sans-serif;
+}
+
+body {
     background-color: #d2d2d2;
 }
 
@@ -90,4 +93,64 @@ table td {
 
 .set-wrap {
     padding-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    height: 32px;
+    line-height: 32px;
+    color: #333;
+}
+
+.input,
+.select,
+input[type="text"],
+input[type="password"] {
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 348px;
+    height: 30px;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.select {
+    width: 148px;
+}
+
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    padding: 0 25px;
+    height: 32px;
+    line-height: 34px;
+    border: 0;
+    color: #fff;
+    background-color: #261c1a;
+    outline: none;
+}
+
+.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #2e2220;
+}
+
+.cancel,
+input.cancel {
+    background-color: #ababab;
+}
+
+.cancel:hover,
+input.cancel:hover {
+    background-color: #9e9e9e;
 }
