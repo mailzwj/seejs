@@ -14,7 +14,7 @@
     include_once('../../inc/conn.php');
 
     // $rrs = mysql_query('DELETE FROM article WHERE id=' . $id);
-    $rrs = mysql_query('UPDATE article SET deleted=0 WHERE id=' . $id);
+    $rrs = mysql_query('UPDATE article SET deleted=1 WHERE id=' . $id);
 
     mysql_close($conn);
 
