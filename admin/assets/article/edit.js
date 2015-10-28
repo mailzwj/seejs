@@ -11,8 +11,17 @@ $(function(){
     });
 
     var submitBtn = $('#J_SaveArticle'),
-        conBox = $('#J_HtmlContent');
-    submitBtn.on('click', function(){
+        conBox = $('#J_HtmlContent'),
+        oForm = $('#J_ArticleForm');
+    // submitBtn.on('click', function(){
+    //     conBox.val(editor.getHTML());
+    // });
+    oForm.on('submit', function(){
         conBox.val(editor.getHTML());
+    });
+    
+    var back = $("#J_BackList");
+    back.on('click', function(){
+        history.go(-1);
     });
 });
