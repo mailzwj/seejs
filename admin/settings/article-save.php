@@ -24,7 +24,7 @@
     if ($id) {
         $irs = mysql_query('UPDATE article SET title="' . $title .'",sourcecontent="' . $source . '",content="' . $content . '",category="' . $category . '" WHERE id=' . $id);
     } else {
-        $irs = mysql_query('INSERT INTO article(title,sourcecontent,content,publisher,category) VALUES("' . $title . '","' . $source . '","' . $content . '","' . $_SESSION['administrator'] . '","' . $category . '")');
+        $irs = mysql_query('INSERT INTO article(title,sourcecontent,content,publisher,category,published) VALUES("' . $title . '","' . $source . '","' . $content . '","' . $_SESSION['administrator'] . '","' . $category . '",1)');
     }
 
     mysql_close($conn);
