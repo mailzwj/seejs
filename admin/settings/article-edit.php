@@ -28,7 +28,7 @@
 ?>
 
 <div class="set-wrap">
-    <form action="./article-save.php" method="post">
+    <form action="./article-save.php" method="post" id="J_ArticleForm">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <input type="hidden" name="content" id="J_HtmlContent" value="">
         <div class="ed-row">
