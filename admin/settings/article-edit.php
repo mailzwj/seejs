@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="ed-row">
-            <input type="submit" value="发 布" id="J_SaveArticle" class="button"><input type="submit" value="取 消" class="button cancel">
+            <input type="submit" value="发 布" id="J_SaveArticle" class="button"><input type="button" id="J_BackList" value="取 消" class="button cancel">
         </div>
     </form>
 </div>
