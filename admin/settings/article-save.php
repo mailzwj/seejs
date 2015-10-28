@@ -12,9 +12,9 @@
     $title = htmlspecialchars($_POST['title']);
     $cate = htmlspecialchars($_POST['category']);
     $source = htmlspecialchars($_POST['source']);
-    $content = htmlspecialchars($_POST['content']);
+    $content = str_replace("\"", "&quot;", $_POST['content']);
 
-    $crs = mysql_query('SELECT category FROM category WHERE id=' . $cate);
+    $crs = mysql_query("SELECT category FROM category WHERE id=" . $cate);
     if ($row = mysql_fetch_array($crs)) {
         $category = $row['category'];
     } else {
@@ -22,9 +22,9 @@
     }
 
     if ($id) {
-        $irs = mysql_query('UPDATE article SET title="' . $title .'",sourcecontent="' . $source . '",content="' . $content . '",category="' . $category . '" WHERE id=' . $id);
+        $irs = mysql_query("UPDATE article SET title=\"" . $title ."\",sourcecontent=\"" . $source . "\",content=\"" . $content . "\",category=\"" . $category . "\" WHERE id=" . $id);
     } else {
-        $irs = mysql_query('INSERT INTO article(title,sourcecontent,content,publisher,category,published) VALUES("' . $title . '","' . $source . '","' . $content . '","' . $_SESSION['administrator'] . '","' . $category . '",1)');
+        $irs = mysql_query("INSERT INTO article(title,sourcecontent,content,publisher,category,published) VALUES(\"" . $title . "\",\"" . $source . "\",\"" . $content . "\",\"" . $_SESSION['administrator'] . "\",\"" . $category . "\",1)");
     }
 
     mysql_close($conn);

@@ -34,7 +34,7 @@
 ?>
 <div class="set-wrap">
     <a href="./article-edit.php" target="_self" class="add-article">
-        <span class="icon-plus25"></span>Add article
+        <span class="icon-plus25"></span>新增文章
     </a>
     <div class="art-table">
         <table>

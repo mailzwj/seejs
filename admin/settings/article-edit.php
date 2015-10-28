@@ -30,7 +30,7 @@
 <div class="set-wrap">
     <form action="./article-save.php" method="post" id="J_ArticleForm">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
-        <input type="hidden" name="content" id="J_HtmlContent" value="">
+        <textarea class="hidden" name="content" id="J_HtmlContent"></textarea>
         <div class="ed-row">
             <label for="J_ArticleTitle" class="label">标题</label><br>
             <input type="text" name="title" id="J_ArticleTitle" class="input" placeholder="请输入文章标题" value="<?php echo $article ? $article['title'] : ''; ?>">

@@ -6,7 +6,14 @@ $(function(){
         watch: false,
         saveHTMLToTextarea: true,
         toolbarIcons: function() {
-            return editormd.toolbarModes['simple'];
+            // return editormd.toolbarModes['simple'];
+            return ['undo', 'redo', '|',
+                'bold', 'del', 'italic', 'quote', '|',
+                'h1', 'h2', 'h3', 'h4', '|',
+                'list-ul', 'list-ol', '|',
+                'link', 'reference-link', 'image', 'code', 'code-block', 'table', '||',
+                'preview', 'help', 'info'
+            ];
         }
     });
 
