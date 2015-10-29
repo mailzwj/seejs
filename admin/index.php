@@ -21,7 +21,10 @@
             <div class="left-menu">
                 <ul class="menus-list" id="J_ManageMenus">
                     <li class="menu">
-                        <a href="/" target="J_AdminIframe" class="menu-link">Edit blog information</a>
+                        <a href="/" target="J_AdminIframe" class="menu-link">编辑博客信息</a>
+                    </li>
+                    <li class="menu">
+                        <a href="./settings/cate-config.php" target="J_AdminIframe" class="menu-link">分类管理</a>
                     </li>
                     <li class="menu">
                         <a href="/" target="J_AdminIframe" class="menu-link">Menu settings</a>
@@ -30,7 +33,7 @@
                         <a href="/" target="J_AdminIframe" class="menu-link">Master links</a>
                     </li>
                     <li class="menu active">
-                        <a href="/" target="J_AdminIframe" class="menu-link">Article manage</a>
+                        <a href="./settings/article-list.php" target="J_AdminIframe" class="menu-link">文章管理</a>
                     </li>
                     <li class="menu">
                         <a href="/" target="J_AdminIframe" class="menu-link">Master card</a>

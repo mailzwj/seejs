@@ -37,16 +37,16 @@
         <span class="icon-plus25"></span>新增文章
     </a>
     <div class="art-table">
-        <table>
+        <table class="art-list">
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Title</th>
-                    <th>Publisher</th>
-                    <th>Category</th>
-                    <th>Praise</th>
-                    <th>Comment</th>
-                    <th>Manage</th>
+                    <th>标题</th>
+                    <th>发布者</th>
+                    <th>分类</th>
+                    <th>点赞数</th>
+                    <th>评论数</th>
+                    <th>管理</th>
                 </tr>
             </thead>
             <tbody>

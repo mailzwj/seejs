@@ -114,7 +114,7 @@
 }
 
 /* 行号 Start */
-pre {
+/*pre {
     position: relative;
     margin-bottom: 24px;
     border-radius: 3px;
@@ -149,7 +149,7 @@ code.has-numbering {
     font-family: Menlo, monospace;
     font-size: 0.8em;
     color: #AAA;
-}
+}*/
 /* 行号 End */
 
 @media all and (max-width: 480px) {

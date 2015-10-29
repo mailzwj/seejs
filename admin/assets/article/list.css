@@ -12,6 +12,10 @@
     background-color: #2e2220;
 }
 
+.art-table .art-list {
+    min-width: 800px;
+}
+
 .art-table .art-edit,
 .art-table .art-del {
     font-size: 16px;

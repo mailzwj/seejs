@@ -1,0 +1,37 @@
+.cate-wrap .ed-row {
+    margin-bottom: 20px;
+}
+
+.cate-wrap .label {
+    width: 100px;
+}
+
+.cate-wrap .btn-row {
+    padding-left: 100px;
+}
+
+.cate-wrap .cancel {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 20px;
+    height: 32px;
+}
+
+.cate-list {
+    margin-top: 40px;
+    width: 460px;
+}
+
+.cate-list .art-edit,
+.cate-list .art-del {
+    font-size: 16px;
+}
+
+.cate-list .art-edit {
+    color: #01b1c8;
+}
+
+.cate-list .art-del {
+    color: #c50000;
+}
