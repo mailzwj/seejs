@@ -99,7 +99,7 @@
                 </a>
             </div>
             <div class="reprint">
-                转载请注明原文来自<a href="index.php" target="_self">SEEJS</a>的：<a href="#" target="_self">《<?php echo $rs['title'];?>》</a>
+                转载请注明原文来自<a href="index.php" target="_self">SEEJS</a>的：<a href="?id=<?php echo $id; ?>" target="_self">《<?php echo $rs['title'];?>》</a>
             </div>
         </div>
         <?php } ?>
