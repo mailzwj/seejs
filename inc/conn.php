@@ -1,7 +1,7 @@
 <?php
     // echo md5("seejscom");
-    $host = 'localhost';
-    $prot = '3306';
+    $host = '127.0.0.1';
+    $port = '3306';
     $user = 'root';
     $pwd = 'admin';
     $dbName = 'seejs';

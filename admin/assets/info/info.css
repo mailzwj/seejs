@@ -1,0 +1,33 @@
+.info-wrap .ed-row {
+    margin-bottom: 20px;
+}
+
+.info-wrap .label {
+    width: 100px;
+}
+
+.info-wrap .btn-row {
+    padding-left: 100px;
+}
+
+.info-wrap .upload {
+    position: relative;
+    margin-left: 18px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info-wrap .upload .up-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 300px;
+    opacity: 0;
+    cursor: pointer;
+}

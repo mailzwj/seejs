@@ -11,7 +11,7 @@
 <body>
 <div class="menubar">
     <a href="index.php" target="_self" class="logo">
-        &#xe864;
+        <img src="./assets/image/logo.png" class="logo-pic">
     </a>
     <p class="site-name">
         SEEJS

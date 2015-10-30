@@ -21,7 +21,7 @@
             <form action="./checklogin.php" class="login-form" method="post">
                 <div class="form-group">
                     <label for="J_AdminName" class="input-label"><span class="icon-user77"></span></label>
-                    <input type="text" name="adminname" id="J_AdminName" class="login-input" placeholder="Administrator">
+                    <input type="text" name="adminname" id="J_AdminName" class="login-input" placeholder="Administrator" autofocus>
                 </div>
                 <div class="form-group">
                     <label for="J_AdminPass" class="input-label"><span class="icon-vintage27"></span></label>

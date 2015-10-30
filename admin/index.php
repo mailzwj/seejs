@@ -21,7 +21,7 @@
             <div class="left-menu">
                 <ul class="menus-list" id="J_ManageMenus">
                     <li class="menu">
-                        <a href="/" target="J_AdminIframe" class="menu-link">编辑博客信息</a>
+                        <a href="./settings/blog-info.php" target="J_AdminIframe" class="menu-link">编辑博客信息</a>
                     </li>
                     <li class="menu">
                         <a href="./settings/cate-config.php" target="J_AdminIframe" class="menu-link">分类管理</a>
