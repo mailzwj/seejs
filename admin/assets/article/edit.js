@@ -4,6 +4,7 @@ $(function(){
         width: 900,
         height: 450,
         watch: false,
+        htmlDecode: 'script,iframe,embed,object|on*',
         saveHTMLToTextarea: true,
         toolbarIcons: function() {
             // return editormd.toolbarModes['simple'];
