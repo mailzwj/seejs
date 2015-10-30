@@ -23,6 +23,7 @@
         $one = mysql_query('SELECT * FROM category WHERE id=' . $id);
         $oneArr = mysql_fetch_array($one);
     }
+    $rows = mysql_num_rows($cates);
 ?>
 
 <div class="set-wrap cate-wrap">
@@ -45,7 +46,8 @@
         </thead>
         <tbody>
             <?php
-                while($row = mysql_fetch_array($cates)) {
+                if ($rows) {
+                    while($row = mysql_fetch_array($cates)) {
             ?>
             <tr>
                 <td><?php echo $row['id']; ?></td>
@@ -55,7 +57,16 @@
                     <a href="./cate-del.php?id=<?php echo $row['id']; ?>" target="_self" class="art-del"><span class="icon-remove11"></span></a>
                 </td>
             </tr>
-            <?php } ?>
+            <?php
+                    }
+                } else {
+            ?>
+            <tr>
+                <td colspan="3">暂无分类！</td>
+            </tr>
+            <?php
+                }
+            ?>
         </tbody>
     </table>
 </div>
