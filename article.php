@@ -84,11 +84,12 @@
         </div>
         <?php
             if ($rs) {
+                $dt = explode(' ', $rs['createtime']);
         ?>
         <div class="art-foot">
             <div class="art-info">
                 <span class="pub-date">
-                    <span class="icons icon-calendar52"></span>&nbsp;<?php echo explode(' ', $rs['createtime'])[0];?>
+                    <span class="icons icon-calendar52"></span>&nbsp;<?php echo $dt[0];?>
                 </span>
                 <span class="art-cate">
                     <span class="icons icon-four29"></span>&nbsp;<?php echo $rs['category'];?>
