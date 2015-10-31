@@ -14,3 +14,25 @@
 .ed-row .cancel {
     margin-left: 20px;
 }
+
+.art-wrap .upload {
+    position: relative;
+    margin-left: 18px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.art-wrap .upload .up-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 300px;
+    opacity: 0;
+    cursor: pointer;
+}

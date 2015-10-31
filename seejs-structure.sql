@@ -11,7 +11,7 @@
  Target Server Version : 50627
  File Encoding         : utf-8
 
- Date: 10/31/2015 17:14:36 PM
+ Date: 11/01/2015 01:00:27 AM
 */
 
 SET NAMES utf8;
@@ -28,6 +28,7 @@ CREATE TABLE `article` (
   `content` text,
   `publisher` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL,
+  `banner` varchar(255) DEFAULT NULL,
   `praise` int(10) DEFAULT '0',
   `comment` int(10) DEFAULT '0',
   `deleted` int(2) DEFAULT '0',

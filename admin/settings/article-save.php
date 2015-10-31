@@ -11,6 +11,7 @@
     $id = htmlspecialchars($_POST['id']);
     $title = htmlspecialchars($_POST['title']);
     $cate = htmlspecialchars($_POST['category']);
+    $banner = htmlspecialchars($_POST['banner']);
     $source = htmlspecialchars($_POST['source']);
     $content = str_replace("\"", "&quot;", $_POST['content']);
 
@@ -22,9 +23,9 @@
     }
 
     if ($id) {
-        $irs = mysql_query("UPDATE article SET title=\"" . $title ."\",sourcecontent=\"" . $source . "\",content=\"" . $content . "\",category=\"" . $category . "\" WHERE id=" . $id);
+        $irs = mysql_query("UPDATE article SET title=\"" . $title ."\",sourcecontent=\"" . $source . "\",content=\"" . $content . "\",category=\"" . $category . "\",banner=\"" . $banner . "\" WHERE id=" . $id);
     } else {
-        $irs = mysql_query("INSERT INTO article(title,sourcecontent,content,publisher,category,published) VALUES(\"" . $title . "\",\"" . $source . "\",\"" . $content . "\",\"" . $_SESSION['administrator'] . "\",\"" . $category . "\",1)");
+        $irs = mysql_query("INSERT INTO article(title,sourcecontent,content,publisher,category,banner,published) VALUES(\"" . $title . "\",\"" . $source . "\",\"" . $content . "\",\"" . $_SESSION['administrator'] . "\",\"" . $category . "\",\"" . $banner . "\",1)");
     }
 
     mysql_close($conn);

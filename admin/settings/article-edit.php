@@ -27,7 +27,7 @@
     }
 ?>
 
-<div class="set-wrap">
+<div class="set-wrap art-wrap">
     <form action="./article-save.php" method="post" id="J_ArticleForm">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <textarea class="hidden" name="content" id="J_HtmlContent"></textarea>
@@ -60,6 +60,14 @@
                     }
                 ?>
             </select>
+        </div>
+        <div class="ed-row">
+            <label for="J_ArticleBanner" class="label">主图</label><br>
+            <input type="text" name="banner" id="J_ArticleBanner" class="input" placeholder="请填写主题图片" value="<?php echo $article ? $article['banner'] : ''; ?>">
+            <div class="button upload">
+                <span class="icon-upload40"></span>
+                <input type="file" name="image" id="J_UploadBanner" class="up-image">
+            </div>
         </div>
         <div class="ed-row">
             <label for="J_ArticleSource" class="label">正文</label><br>
