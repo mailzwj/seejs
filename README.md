@@ -4,7 +4,7 @@ A new blog project
 
 ### 预览
 
-[](http://mailzwj.github.io/seejs/index.html);
+[http://mailzwj.github.io/seejs/index.html](http://mailzwj.github.io/seejs/index.html)
 
 ### 使用方法
 
