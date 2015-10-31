@@ -11,7 +11,7 @@
  Target Server Version : 50627
  File Encoding         : utf-8
 
- Date: 10/31/2015 01:06:23 AM
+ Date: 10/31/2015 17:13:57 PM
 */
 
 SET NAMES utf8;
@@ -62,6 +62,25 @@ INSERT INTO `category` VALUES ('5', 'Web前端'), ('6', '生活百科');
 COMMIT;
 
 -- ----------------------------
+--  Table structure for `link`
+-- ----------------------------
+DROP TABLE IF EXISTS `link`;
+CREATE TABLE `link` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `linkname` varchar(255) NOT NULL,
+  `linkaddr` varchar(255) DEFAULT NULL,
+  `linkicon` varchar(255) NOT NULL DEFAULT 'icon-link15',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records of `link`
+-- ----------------------------
+BEGIN;
+INSERT INTO `link` VALUES ('1', 'Github', 'http://github.com', 'icon-github11'), ('2', '新浪微博', 'http://weibo.com/ys800', 'icon-weibo'), ('3', '微信', '', 'icon-speech59');
+COMMIT;
+
+-- ----------------------------
 --  Table structure for `managers`
 -- ----------------------------
 DROP TABLE IF EXISTS `managers`;
@@ -78,6 +97,26 @@ CREATE TABLE `managers` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `managers` VALUES ('1', 'seejs', 'a98932365dbfc586515ce9dc92ea41c8', '1');
+COMMIT;
+
+-- ----------------------------
+--  Table structure for `menu`
+-- ----------------------------
+DROP TABLE IF EXISTS `menu`;
+CREATE TABLE `menu` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `menu` varchar(255) NOT NULL,
+  `menulink` varchar(255) DEFAULT NULL,
+  `parent` int(10) DEFAULT '0',
+  `sort` int(10) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records of `menu`
+-- ----------------------------
+BEGIN;
+INSERT INTO `menu` VALUES ('1', '首页', './index.php', '0', '1'), ('2', '关于', './about.php', '0', '1');
 COMMIT;
 
 -- ----------------------------
