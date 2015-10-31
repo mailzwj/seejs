@@ -20,26 +20,23 @@
         <div class="left-menu-wrap">
             <div class="left-menu">
                 <ul class="menus-list" id="J_ManageMenus">
-                    <li class="menu">
+                    <li class="menu active">
                         <a href="./settings/blog-info.php" target="J_AdminIframe" class="menu-link">编辑博客信息</a>
                     </li>
                     <li class="menu">
                         <a href="./settings/cate-config.php" target="J_AdminIframe" class="menu-link">分类管理</a>
                     </li>
                     <li class="menu">
-                        <a href="/" target="J_AdminIframe" class="menu-link">Menu settings</a>
+                        <a href="./settings/menu-setting.php" target="J_AdminIframe" class="menu-link">菜单管理</a>
                     </li>
                     <li class="menu">
-                        <a href="/" target="J_AdminIframe" class="menu-link">Master links</a>
+                        <a href="./settings/link-setting.php" target="J_AdminIframe" class="menu-link">链接管理</a>
                     </li>
-                    <li class="menu active">
+                    <li class="menu">
                         <a href="./settings/article-list.php" target="J_AdminIframe" class="menu-link">文章管理</a>
                     </li>
                     <li class="menu">
-                        <a href="/" target="J_AdminIframe" class="menu-link">Master card</a>
-                    </li>
-                    <li class="menu">
-                        <a href="/" target="J_AdminIframe" class="menu-link">Category manage</a>
+                        <a href="./settings/card-setting.php" target="J_AdminIframe" class="menu-link">站长名片</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +47,7 @@
             您好，<?php echo $_SESSION['administrator']; ?>！<a href="./exit.php" target="_self" class="logout">退出</a>
         </div>
         <div class="right-body">
-            <iframe src="./settings/article-list.php" frameborder="0" class="settings" id="J_AdminIframe" name="J_AdminIframe"></iframe>
+            <iframe src="./settings/blog-info.php" frameborder="0" class="settings" id="J_AdminIframe" name="J_AdminIframe"></iframe>
         </div>
     </div>
 </div>

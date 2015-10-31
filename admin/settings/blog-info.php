@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>SEEJS-分类管理</title>
+    <title>SEEJS-博客基本信息</title>
     <link rel="stylesheet" href="../assets/base/normalize.css">
     <link rel="stylesheet" href="../assets/base/common.css">
     <link rel="stylesheet" href="../assets/info/info.css">

@@ -6,7 +6,7 @@
     }
 
     $id = $_GET['id'];
-    if (!isset($id)) {
+    if (empty($id)) {
         header('Location: ./cate-config.php');
         exit();
     }

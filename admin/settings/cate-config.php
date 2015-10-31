@@ -28,9 +28,9 @@
 
 <div class="set-wrap cate-wrap">
     <form action="./cate-save.php" method="post" id="J_CateForm">
-        <input type="hidden" name="id" value="<?php echo $oneArr ? $oneArr['id'] : ''; ?>">
+        <input type="hidden" name="id" value="<?php echo isset($oneArr) ? $oneArr['id'] : ''; ?>">
         <div class="ed-row">
-            <label for="J_CateTitle" class="label">分类名称</label><input type="text" name="category" id="J_CateTitle" class="input" placeholder="请输分类名称" value="<?php echo $oneArr ? $oneArr['category'] : ''; ?>">
+            <label for="J_CateTitle" class="label">分类名称</label><input type="text" name="category" id="J_CateTitle" class="input" placeholder="请输入分类名称" value="<?php echo isset($oneArr) ? $oneArr['category'] : ''; ?>">
         </div>
         <div class="ed-row btn-row">
             <input type="submit" value="<?php echo $id ? '保 存' : '添 加'; ?>" id="J_SaveCategory" class="button"><?php echo $id ? '<a href="./cate-config.php" class="button cancel">返回新增</a>' : ''; ?>

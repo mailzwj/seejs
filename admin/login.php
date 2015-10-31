@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if ($_SESSION['adminId']) {
+    if (isset($_SESSION['adminId'])) {
         header('Location: ./index.php');
         exit();
     }

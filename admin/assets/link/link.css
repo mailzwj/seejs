@@ -1,0 +1,37 @@
+.link-wrap .ed-row {
+    margin-bottom: 20px;
+}
+
+.link-wrap .label {
+    width: 100px;
+}
+
+.link-wrap .btn-row {
+    padding-left: 100px;
+}
+
+.link-wrap .cancel {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 20px;
+    height: 32px;
+}
+
+.link-list {
+    margin-top: 40px;
+    width: 640px;
+}
+
+.link-list .link-edit,
+.link-list .link-del {
+    font-size: 16px;
+}
+
+.link-list .link-edit {
+    color: #01b1c8;
+}
+
+.link-list .link-del {
+    color: #c50000;
+}
