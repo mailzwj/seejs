@@ -2,67 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Seejs Bolg v1.0</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/base.css">
+    <title>SEEJS - 百码山庄</title>
+    <?php
+        include_once('./inc/assets-css.php');
+    ?>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-<div class="menubar">
-    <a href="index.php" target="_self" class="logo">
-        <img src="./assets/image/logo.png" class="logo-pic">
-    </a>
-    <p class="site-name">
-        SEEJS
-    </p>
-    <div class="menus">
-        <ul class="menu-list">
-            <li class="menu">
-                <a href="index.php" class="menu-url">
-                    Home <span class="icons icon-chevron18"></span>
-                </a>
-            </li>
-            <li class="menu">
-                <a href="index.php" class="menu-url">
-                    Archive <span class="icons icon-chevron18"></span>
-                </a>
-            </li>
-            <li class="menu">
-                <a href="index.php" class="menu-url">
-                    Works <span class="icons icon-chevron18"></span>
-                </a>
-            </li>
-            <li class="menu">
-                <a href="index.php" class="menu-url">
-                    Messages <span class="icons icon-chevron18"></span>
-                </a>
-            </li>
-            <li class="menu">
-                <a href="index.php" class="menu-url">
-                    About <span class="icons icon-chevron18"></span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="other-link">
-        <a href="http://github.com/mailzwj" target="_blank" class="link">
-            <span class="icon-github11"></span>
-            <span class="link-name">mailzwj</span>
-        </a>
-        <a href="http://weibo.com/ys800" target="_blank" class="link">
-            <span class="icon-weibo"></span>
-            <span class="link-name">OAuth_v2</span>
-        </a>
-        <a href="#" target="_blank" class="link">
-            <span class="icon-speech59"></span>
-            <span class="link-name">无痕</span>
-        </a>
-    </div>
-</div>
-<div class="sidebar">
-    <!-- 敬请期待... -->
-</div>
+<?php
+    include_once('./inc/menubar.php');
+    include_once('./inc/sidebar.php');
+?>
 <div class="wrap">
     <span class="vertical-line"></span>
     <div class="article-wrap">
@@ -142,5 +92,8 @@
         </div>
     </div>
 </div>
+<?php
+    include_once('./inc/assets-js.php');
+?>
 </body>
 </html>
