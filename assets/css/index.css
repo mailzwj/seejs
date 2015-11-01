@@ -10,12 +10,14 @@
 
 .wrap .article-wrap {
     padding: 35px 0 0;
+    background-color: transparent;
 }
 
 .article {
     position: relative;
     z-index: 2;
     margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .article .art-type {
@@ -94,7 +96,8 @@
 }
 
 .article .art-body {
-    line-height: 1.432;
+    padding: 0;
+    line-height: 1.832;
     color: #666;
 }
 
@@ -113,6 +116,10 @@
 
 .article .art-data .icon-comment32 {
     margin-left: 10px;
+}
+
+.markdown-body>:last-child {
+    min-height: 24px;
 }
 
 /* 分页样式 Start */

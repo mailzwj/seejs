@@ -1,5 +1,5 @@
 <?php
-    include_once('./inc/conn.php');
+
     $info = mysql_query('SELECT * FROM siteinfo WHERE used=1');
     $infoData = mysql_fetch_array($info);
 
@@ -9,7 +9,6 @@
     $link = mysql_query('SELECT * FROM link');
     // $linkData = mysql_fetch_array($link);
 
-    mysql_close($conn);
 ?>
 
 <div class="menubar">
