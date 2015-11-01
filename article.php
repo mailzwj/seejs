@@ -24,6 +24,7 @@
     include_once('./inc/menubar.php');
     include_once('./inc/sidebar.php');
 ?>
+<input type="hidden" id="J_ArtId" value="<?php echo $id; ?>">
 <div class="wrap">
     <div class="article-wrap">
         <h1 class="art-title">
@@ -44,12 +45,12 @@
                 <span class="art-cate">
                     <span class="icons icon-four29"></span>&nbsp;<?php echo $rs['category'];?>
                 </span>
-                <a href="#" class="art-praise">
-                    <span class="icons icon-thumbs26"></span>&nbsp;(<?php echo $rs['praise'];?>)
+                <a href="./apis/praise.php?id=<?php echo $id; ?>" class="J_ArtPraise art-praise">
+                    <span class="icons icon-thumbs26"></span>&nbsp;(<span class="J_PraiseNum"><?php echo $rs['praise'];?></span>)
                 </a>
             </div>
             <div class="reprint">
-                转载请注明原文来自<a href="index.php" target="_self">SEEJS</a>的：<a href="?id=<?php echo $id; ?>" target="_self">《<?php echo $rs['title'];?>》</a>
+                转载请注明原文来自<a href="./index.php" target="_self">SEEJS</a>的：<a href="?id=<?php echo $id; ?>" target="_self">《<?php echo $rs['title'];?>》</a>
             </div>
         </div>
         <?php } ?>

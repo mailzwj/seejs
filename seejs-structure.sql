@@ -11,7 +11,7 @@
  Target Server Version : 50627
  File Encoding         : utf-8
 
- Date: 11/01/2015 01:00:27 AM
+ Date: 11/02/2015 00:22:17 AM
 */
 
 SET NAMES utf8;
@@ -83,6 +83,18 @@ CREATE TABLE `menu` (
   `sort` int(10) DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Table structure for `praise`
+-- ----------------------------
+DROP TABLE IF EXISTS `praise`;
+CREATE TABLE `praise` (
+  `id` int(10) NOT NULL DEFAULT '1',
+  `articleid` int(10) NOT NULL,
+  `ip` varchar(255) DEFAULT '*.*.*.*',
+  `status` int(2) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Table structure for `siteinfo`
