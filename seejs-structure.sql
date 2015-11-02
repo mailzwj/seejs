@@ -1,24 +1,22 @@
 /*
- Navicat MySQL Data Transfer
+Navicat MySQL Data Transfer
 
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50627
- Source Host           : localhost
- Source Database       : seejs
+Source Server         : localhost
+Source Server Version : 60004
+Source Host           : localhost:3306
+Source Database       : seejs
 
- Target Server Type    : MySQL
- Target Server Version : 50627
- File Encoding         : utf-8
+Target Server Type    : MYSQL
+Target Server Version : 60004
+File Encoding         : 65001
 
- Date: 11/02/2015 00:22:17 AM
+Date: 2015-11-02 11:25:26
 */
 
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
+SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
---  Table structure for `article`
+-- Table structure for article
 -- ----------------------------
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE `article` (
@@ -35,20 +33,20 @@ CREATE TABLE `article` (
   `published` int(2) DEFAULT '0',
   `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `category`
+-- Table structure for category
 -- ----------------------------
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `category` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `link`
+-- Table structure for link
 -- ----------------------------
 DROP TABLE IF EXISTS `link`;
 CREATE TABLE `link` (
@@ -57,10 +55,10 @@ CREATE TABLE `link` (
   `linkaddr` varchar(255) DEFAULT NULL,
   `linkicon` varchar(255) NOT NULL DEFAULT 'icon-link15',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `managers`
+-- Table structure for managers
 -- ----------------------------
 DROP TABLE IF EXISTS `managers`;
 CREATE TABLE `managers` (
@@ -69,10 +67,10 @@ CREATE TABLE `managers` (
   `password` varchar(255) NOT NULL,
   `level` int(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `menu`
+-- Table structure for menu
 -- ----------------------------
 DROP TABLE IF EXISTS `menu`;
 CREATE TABLE `menu` (
@@ -82,22 +80,22 @@ CREATE TABLE `menu` (
   `parent` int(10) DEFAULT '0',
   `sort` int(10) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `praise`
+-- Table structure for praise
 -- ----------------------------
 DROP TABLE IF EXISTS `praise`;
 CREATE TABLE `praise` (
-  `id` int(10) NOT NULL DEFAULT '1',
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `articleid` int(10) NOT NULL,
   `ip` varchar(255) DEFAULT '*.*.*.*',
   `status` int(2) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `siteinfo`
+-- Table structure for siteinfo
 -- ----------------------------
 DROP TABLE IF EXISTS `siteinfo`;
 CREATE TABLE `siteinfo` (
@@ -107,6 +105,4 @@ CREATE TABLE `siteinfo` (
   `subname` varchar(255) DEFAULT NULL,
   `used` int(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
-SET FOREIGN_KEY_CHECKS = 1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
