@@ -1,3 +1,6 @@
+<?php
+    include_once('./inc/conn.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
