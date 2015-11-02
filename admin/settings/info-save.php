@@ -17,8 +17,11 @@
         header('Location: ./blog-info.php?err=LOGO不是合法的图片链接！');
         exit();
     }
-
-    $rrs = mysql_query('UPDATE siteinfo SET logo="' . $logo . '",sitename="' . $name . '",subname="' . $sname . '" WHERE id=' . $id . ' AND used=1');
+    if (empty($id)) {
+        $rrs = mysql_query('INSERT INTO siteinfo(logo,sitename,subname,used) VALUES ("' . $logo . '","' . $name . '","' . $sname . '",1)');
+    } else {
+        $rrs = mysql_query('UPDATE siteinfo SET logo="' . $logo . '",sitename="' . $name . '",subname="' . $sname . '" WHERE id=' . $id . ' AND used=1');
+    }
 
     mysql_close($conn);
 
