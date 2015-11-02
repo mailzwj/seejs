@@ -71,7 +71,7 @@
                 <?php
                     if ($a['banner']) {
                 ?>
-                <div class="art-theme" style="background-image: url(./assets/image/pict.png);"></div>
+                <div class="art-theme" style="background-image: url(<?php echo $a['banner']; ?>);"></div>
                 <?php
                     }
                 ?>
