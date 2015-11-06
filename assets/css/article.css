@@ -161,7 +161,7 @@ code.has-numbering {
     
     .wrap .content,
     .wrap .art-foot .reprint {
-        font-size: 8px;
+        font-size: 10px;
     }
     
     .wrap .content h1 {
@@ -187,6 +187,6 @@ code.has-numbering {
     
     .wrap .art-info {
         line-height: 40px;
-        font-size: 8px;
+        font-size: 10px;
     }
 }
