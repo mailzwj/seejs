@@ -279,4 +279,16 @@ ul, li {
     .sidebar {
         display: none;
     }
+    
+    .editormd-html-preview ol.linenums li code,
+    .editormd-preview-container ol.linenums li code,
+    .editormd-html-preview p code,
+    .editormd-preview-container p code {
+        font-size: 8px;
+    }
+
+    .editormd-html-preview pre.prettyprint,
+    .editormd-preview-container pre.prettyprint {
+        padding: 5px;
+    }
 }
