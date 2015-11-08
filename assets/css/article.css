@@ -3,6 +3,7 @@
 }
 
 .wrap .article-wrap {
+    margin-bottom: 20px;
     background-color: #fff;
 }
 
@@ -152,6 +153,99 @@ code.has-numbering {
 }*/
 /* 行号 End */
 
+/* 评论 Start */
+.comment-form {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.com-form .com-title {
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+}
+
+.com-form .com-list {
+    padding: 20px;
+    color: #666;
+}
+
+.com-form .com-list .no-reply {
+    font-size: 12px;
+    color: #999;
+}
+
+.com-form .com-list .rep-list {
+    margin-top: -15px;
+}
+
+.com-form .com-list .rep {
+    margin: 15px 0 0;
+}
+
+.com-form .com-main {
+    display: block;
+    margin: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
+.com-form .com-main .com-group {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.com-form .com-main .com-label {
+    float: left;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.com-form .com-main .com-field {
+    margin-left: 40px;
+}
+
+.com-form .com-main .com-inp {
+    padding: 0;
+    padding-left: 5px;
+    width: 153px;
+    height: 28px;
+    border: 1px solid #ddd;
+    outline: none;
+    color: #666;
+}
+
+.com-form .com-main .com-textarea {
+    padding: 5px;
+    width: 440px;
+    height: 78px;
+    resize: none;
+    vertical-align: top;
+}
+
+.com-form .com-main .com-button {
+    padding: 0 25px;
+    height: 30px;
+    border: 0;
+    line-height: 32px;
+    outline: none;
+    background-color: #261c1a;
+    color: #999;
+    cursor: pointer;
+}
+
+.com-form .com-main .com-button:hover {
+    background-color: #2e2220;
+}
+/* 评论 End */
+
 @media all and (max-width: 480px) {
     .wrap .art-title {
         height: 40px;
@@ -188,5 +282,15 @@ code.has-numbering {
     .wrap .art-info {
         line-height: 40px;
         font-size: 10px;
+    }
+
+    .com-form .com-main .com-field {
+        clear: both;
+        margin-left: 0;
+    }
+
+    .com-form .com-main .com-inp {
+        box-sizing: border-box;
+        width: 100%;
     }
 }

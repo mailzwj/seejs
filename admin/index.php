@@ -36,6 +36,9 @@
                         <a href="./settings/article-list.php" target="J_AdminIframe" class="menu-link">文章管理</a>
                     </li>
                     <li class="menu">
+                        <a href="./settings/comment-review.php" target="J_AdminIframe" class="menu-link">评论管理</a>
+                    </li>
+                    <li class="menu">
                         <a href="./settings/card-setting.php" target="J_AdminIframe" class="menu-link">站长名片</a>
                     </li>
                 </ul>

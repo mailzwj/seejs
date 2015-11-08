@@ -1,10 +1,11 @@
 <?php
     include_once('./inc/conn.php');
+    include_once('./inc/function.php');
     date_default_timezone_set('UTC');
     $id = isset($_GET['id']) ? $_GET['id'] : '';
     if ($id) {
         $art = mysql_query('SELECT * FROM article WHERE id=' . $id . ' AND published=1 AND deleted=0');
-        $rs = mysql_fetch_array($art);
+        $rs = @mysql_fetch_array($art);
     }
 ?>
 <!DOCTYPE html>
@@ -55,8 +56,79 @@
         </div>
         <?php } ?>
     </div>
+    <?php if ($rs) { ?>
+    <div class="comment-form">
+        <?php
+            $coms = mysql_query('SELECT * FROM comments WHERE articleid=' . $id . ' AND deleted=0');
+            $comCount = @mysql_num_rows($coms);
+        ?>
+        <div class="com-form">
+            <h3 class="com-title">大家都在说</h3>
+            <div class="com-list">
+                <?php
+                    if ($comCount) {
+                ?>
+                <ul class="rep-list">
+                    <?php
+                        while($rep = mysql_fetch_array($coms)) {
+                            if ($rep['user'] == get_real_ip()) {
+                                $user = '我';
+                            } else {
+                                $user = preg_replace("/(^[^.]+\.).*(\..+$)/", "$1*.*$2", $rep['user']);
+                            }
+                    ?>
+                    <li class="rep">
+                        <p class="rep-hd"><?php echo htmlspecialchars($user); ?>于<?php echo $rep['reply_time']; ?>说：</p>
+                        <div class="rep-bd">
+                            <?php echo htmlspecialchars($rep['content']); ?>
+                        </div>
+                    </li>
+                    <?php } ?>
+                </ul>
+                <?php
+                    } else {
+                ?>
+                <span class="no-reply">还没人发言，快来抢沙发~~</span>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+    <div class="comment-form">
+        <div class="com-form">
+            <h3 class="com-title">我要说</h3>
+            <form class="com-main" action="./inc/comment-save.php" method="post">
+                <input type="hidden" name="artid" value="<?php echo $id; ?>">
+                <div class="com-group">
+                    <label class="com-label" for="J_UserNick">昵称</label>
+                    <div class="com-field">
+                        <input type="text" class="com-inp" id="J_UserNick" name="nick" placeholder="<?php echo get_real_ip(); ?>">
+                    </div>
+                </div>
+                <div class="com-group">
+                    <label class="com-label" for="J_UserEmail">邮箱</label>
+                    <div class="com-field">
+                        <input type="text" class="com-inp" id="J_UserEmail" name="email" placeholder="请填写真实的邮箱地址">
+                    </div>
+                </div>
+                <div class="com-group">
+                    <label class="com-label" for="J_ComContent">评论</label>
+                    <div class="com-field">
+                        <textarea name="comment" id="ComContent" cols="30" rows="10" class="com-inp com-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="com-group">
+                    <!-- <label class="com-label" for="J_UserEmail">邮箱</label> -->
+                    <div class="com-field">
+                        <input type="submit" class="com-button" id="J_UserComment" name="combtn" value="发 布">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <?php } ?>
 </div>
 <?php
+    mysql_close($conn);
     include_once('./inc/assets-js.php');
 ?>
 <script src="assets/plugins/editormd/prettify.min.js"></script>

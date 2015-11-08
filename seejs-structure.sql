@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 60004
 File Encoding         : 65001
 
-Date: 2015-11-02 11:25:26
+Date: 2015-11-08 11:41:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -46,6 +46,23 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Table structure for comments
+-- ----------------------------
+DROP TABLE IF EXISTS `comments`;
+CREATE TABLE `comments` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `articleid` int(10) NOT NULL,
+  `user` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `content` text,
+  `parentid` int(10) DEFAULT NULL,
+  `reply_path` varchar(255) DEFAULT NULL,
+  `reply_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `deleted` int(2) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
 -- Table structure for link
 -- ----------------------------
 DROP TABLE IF EXISTS `link`;
@@ -67,7 +84,7 @@ CREATE TABLE `managers` (
   `password` varchar(255) NOT NULL,
   `level` int(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for menu
@@ -80,7 +97,7 @@ CREATE TABLE `menu` (
   `parent` int(10) DEFAULT '0',
   `sort` int(10) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for praise
