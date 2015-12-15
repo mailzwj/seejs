@@ -10,6 +10,10 @@
     $upload = 'content/upload/';
     $tail = '/admin.*$/';
     $uploadDir = preg_replace($tail, '', dirname(__FILE__)) . $upload;
+    if (!is_dir('../../' . $upload)) {
+        mkdir('../../' . $upload);
+    }
+    @chmod('../../' . $upload, 0777);
     $rNotImg = '/^\.(exe|bat|sh|dll|php|class|py|rb)$/';
 
     $fArr = explode('.', $file['name']);
